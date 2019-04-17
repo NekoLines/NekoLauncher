@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">默認啟動器</string>
+    <string name="app_nolocation">未知</string>
+    <string name="resc">系統正在重繪owo</string>
+    <string name="hitokoto">一言正在加載中……</string>
+    <string name="author">請稍等</string>
+    <string name="time">00:00</string>
+    <string name="onbcpr">你要返回哪裡呢？迷途的人。</string>
+    <string name="locationNull">地址獲取失敗</string>
+</resources>

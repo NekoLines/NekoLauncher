@@ -1,0 +1,180 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+
+    android:layout_margin="0dp"
+    tools:context=".HomeActivity">
+
+    <com.nekolines.launcher.WebImageView
+        android:id="@+id/home_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="0dp"
+        android:alpha="0.75"
+        android:background="@android:color/background_dark"
+        android:padding="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bgimg" />
+
+    <TextView
+        android:id="@+id/author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="false"
+        android:layout_marginBottom="25dp"
+        android:layout_marginRight="25dp"
+        android:fontFamily="serif"
+        android:gravity="bottom"
+        android:text="@string/author"
+        android:textAlignment="textEnd"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <com.nekolines.launcher.AutoSplitTextView
+        android:id="@+id/hitoko"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/author"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:fontFamily="serif"
+        android:gravity="bottom"
+        android:text="@string/hitokoto"
+        android:textAlignment="textEnd"
+        android:textColor="#ffffff"
+        android:textSize="60sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/weather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/degrees"
+        android:layout_alignTop="@+id/degrees"
+        android:layout_marginBottom="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_toEndOf="@+id/degrees"
+        android:adjustViewBounds="true"
+        android:maxHeight="40dp"
+        android:maxWidth="40dp"
+        android:padding="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/icon999" />
+
+    <TextView
+        android:id="@+id/degrees"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/time"
+        android:layout_marginStart="15dp"
+        android:layout_toEndOf="@+id/time"
+        android:gravity="bottom"
+        android:text="@string/app_nolocation"
+        android:textColor="#ffffff"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="105dp"
+        android:gravity="bottom"
+        android:includeFontPadding="false"
+        android:padding="0dp"
+        android:text="@string/time"
+        android:textColor="#ffffff"
+        android:textSize="48sp" />
+
+    <ImageView
+        android:id="@+id/rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/time"
+        android:layout_alignTop="@+id/time"
+        android:layout_marginBottom="75dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="-75dp"
+        android:adjustViewBounds="true"
+        android:maxHeight="60sp"
+        android:maxWidth="60sp"
+        android:onClick="showApps"
+        android:padding="0dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/app" />
+
+    <ImageView
+        android:id="@+id/apps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/rl"
+        android:layout_alignTop="@+id/rl"
+        android:layout_marginStart="15dp"
+        android:layout_toEndOf="@+id/rl"
+        android:adjustViewBounds="true"
+        android:maxHeight="60sp"
+        android:maxWidth="60sp"
+        android:padding="0dp"
+        android:scaleType="fitCenter"
+        android:onClick="showSetting"
+        android:src="@drawable/set" />
+
+    <ImageView
+        android:id="@+id/setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/apps"
+        android:layout_alignTop="@+id/apps"
+        android:layout_marginStart="15dp"
+        android:layout_toEndOf="@+id/apps"
+        android:adjustViewBounds="true"
+        android:maxHeight="60sp"
+        android:maxWidth="60sp"
+        android:padding="0dp"
+        android:scaleType="fitCenter"
+        android:onClick="researchALL"
+        android:src="@drawable/rl" />
+
+    <ImageView
+        android:id="@+id/btbg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/setting"
+        android:layout_alignTop="@+id/setting"
+        android:layout_marginStart="15dp"
+        android:layout_toEndOf="@+id/setting"
+        android:adjustViewBounds="true"
+        android:maxHeight="60sp"
+        android:maxWidth="60sp"
+        android:padding="0dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/bet" />
+
+    <TextView
+        android:id="@+id/power"
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+        android:layout_alignBottom="@+id/btbg"
+        android:layout_alignLeft="@+id/btbg"
+        android:layout_alignRight="@+id/btbg"
+        android:layout_alignTop="@+id/btbg"
+        android:adjustViewBounds="true"
+        android:gravity="center"
+        android:text="@string/app_nolocation"
+        android:textAlignment="center"
+        android:textColor="@color/batteryMid"
+        android:textSize="18sp" />
+
+</RelativeLayout>

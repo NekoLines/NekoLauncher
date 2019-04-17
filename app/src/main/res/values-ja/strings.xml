@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">デフォルトスターター</string>
+    <string name="time">00:00</string>
+    <string name="app_nolocation">未知</string>
+    <string name="resc">"ウオウ リフレッシュイング "</string>
+    <string name="hitokoto">ダウンロード中</string>
+    <string name="author">ちょっと待ってください</string>
+    <string name="onbcpr">どこに帰りますか？道に迷った人。</string>
+    <string name="locationNull">" 地址获取失败 アドレスの取得に失敗しました"</string>
+
+</resources>

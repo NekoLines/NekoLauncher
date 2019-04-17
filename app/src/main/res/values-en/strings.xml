@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Normal Launcher</string>
+    <string name="app_nolocation">Unknown</string>
+    <string name="resc">The system is refreshing now...</string>
+    <string name="hitokoto">Hitokoto is loading...</string>
+    <string name="author">Author is loading...</string>
+    <string name="time">00:00</string>
+    <string name="onbcpr">Where are you going back? A lost person.</string>
+    <string name="locationNull">Address acquisition failed</string>
+</resources>
